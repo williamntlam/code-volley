@@ -1,0 +1,31 @@
+<header class="w-full flex items-center justify-between px-4 py-6 bg-gray-900 text-white border-b border-gray-600">
+    <!-- Left side: Menu + Logo -->
+    <div class="flex items-center space-x-8">
+      <!-- Hamburger Icon -->
+      <div class="space-y-1 cursor-pointer" (click)="toggleMenu()">
+        <div class="w-8 h-1 bg-white"></div>
+        <div class="w-8 h-1 bg-white"></div>
+        <div class="w-8 h-1 bg-white"></div>
+      </div>
+  
+      <!-- Logo -->
+      <h1 class="text-xl font-jersey">
+        <span class="text-4xl">CodeVolley</span>
+      </h1>
+    </div>
+  
+    <!-- Right side: Gray box -->
+    <div class="w-12 h-12 bg-gray-300 rounded-sm"></div>
+  </header>
+  <div *ngIf="showMenu" class="p-4 w-80 bg-gray-900 text-white">
+    <nav>
+      <ul class="text-3xl">
+        <li><a>Home</a></li>
+        <li><a>Practice</a></li>
+        <li><a>Discussions</a></li>
+        <li><a>Daily Question</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  
