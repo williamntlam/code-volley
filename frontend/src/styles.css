@@ -2,6 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
 @import "tailwindcss";
 
-header, nav {
+header, nav, main {
     font-family: "Jersey 25", cursive;
 }
