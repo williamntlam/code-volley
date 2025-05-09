@@ -2,6 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
 @import "tailwindcss";
 
+html, body {
+    background-color: #111827; /* This is the equivalent of bg-gray-900 */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 header, nav, main {
     font-family: "Jersey 25", cursive;
 }
