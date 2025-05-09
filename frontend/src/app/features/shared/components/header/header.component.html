@@ -1,4 +1,4 @@
-<header class="w-full flex items-center justify-between px-4 py-6 bg-gray-900 text-white border-b border-gray-600">
+<header class="w-full flex items-center justify-between px-4 py-6 bg-gray-900 text-white border-b border-gray-600 relative">
     <!-- Left side: Menu + Logo -->
     <div class="flex items-center space-x-8">
       <!-- Hamburger Icon -->
@@ -14,22 +14,26 @@
       </h1>
     </div>
   
-    <!-- Right side: Gray box -->
-    <div class="w-12 h-12 bg-gray-300 rounded-sm"></div>
-  </header>
-  <div
-  *ngIf="showMenu"
-  class="p-4 w-80 bg-gray-900 text-white transform transition-all duration-300 ease-out origin-top scale-y-100 opacity-100"
->
-  <nav>
-    <ul class="text-3xl space-y-2">
-      <li><a class="cursor-pointer hover:text-blue-400">Home</a></li>
-      <li><a class="cursor-pointer hover:text-blue-400">Practice</a></li>
-      <li><a class="cursor-pointer hover:text-blue-400">Discussions</a></li>
-      <li><a class="cursor-pointer hover:text-blue-400">Daily Question</a></li>
-    </ul>
-  </nav>
-</div>
+    <!-- Right side: Profile Icon -->
+    <a [routerLink]="['/profile']" class="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors cursor-pointer">
+      <span class="text-2xl">👤</span>
+    </a>
+
+    <!-- Dropdown Menu -->
+    <div
+      *ngIf="showMenu"
+      class="absolute top-full left-0 p-4 w-80 bg-gray-900 text-white transform transition-all duration-300 ease-out origin-top scale-y-100 opacity-100 border-b border-r border-gray-700 shadow-lg z-50"
+    >
+      <nav>
+        <ul class="text-3xl space-y-2">
+          <li><a class="cursor-pointer hover:text-indigo-400 transition-colors">Home</a></li>
+          <li><a class="cursor-pointer hover:text-indigo-400 transition-colors">Practice</a></li>
+          <li><a class="cursor-pointer hover:text-indigo-400 transition-colors">Discussions</a></li>
+          <li><a class="cursor-pointer hover:text-indigo-400 transition-colors">Daily Question</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
 
   
   
