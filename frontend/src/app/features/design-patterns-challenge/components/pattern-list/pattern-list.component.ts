@@ -9,7 +9,6 @@ import { DesignPattern } from '../../models/design-pattern.model';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './pattern-list.component.html',
-  styleUrls: ['./pattern-list.component.css']
 })
 export class PatternListComponent implements OnInit {
   patterns: DesignPattern[] = [];

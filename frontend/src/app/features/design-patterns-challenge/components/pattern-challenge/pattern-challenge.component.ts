@@ -10,7 +10,6 @@ import { DesignPattern } from '../../models/design-pattern.model';
   standalone: true,
   imports: [CommonModule, RouterModule, FormsModule],
   templateUrl: './pattern-challenge.component.html',
-  styleUrls: ['./pattern-challenge.component.css']
 })
 export class PatternChallengeComponent implements OnInit {
   pattern: DesignPattern | undefined;
